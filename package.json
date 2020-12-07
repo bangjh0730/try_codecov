@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "![codelive](https://user-images.githubusercontent.com/41565118/97793511-52514d80-1c30-11eb-86ea-4f26d87c37f7.gif)\r ![code_live_execution](https://user-images.githubusercontent.com/41565118/97793870-46b45580-1c35-11eb-9faa-c976c7b30f79.gif)",
+  "main": "index.js",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "codemirror": "^5.58.2"
+  },
+  "devDependencies": {
+    "cypress": "^5.6.0"
+  },
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bangjh0730/asdf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bangjh0730/asdf/issues"
+  },
+  "homepage": "https://github.com/bangjh0730/asdf#readme"
+}
