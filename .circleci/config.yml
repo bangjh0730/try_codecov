@@ -26,4 +26,4 @@ workflows:
           yarn: true
       - pytest
       - codecov/upload:
-          token: 06232e08-caeb-4ebb-bf21-2f25e2dc5af3
+          file: {{ coverage_report_filepath }}
