@@ -18,6 +18,8 @@ jobs:
         command: pip install -r requirements.txt
     - run: python -m pip install --progress-bar=off pytest
     - run: python -m pytest test_codes/test.py
+    - codecov/upload:
+        token: d53c3d8a-0050-4a37-8c2e-d4aafa30b00a
 
 workflows:
   build:
@@ -25,5 +27,3 @@ workflows:
       - cypress/run:
           yarn: true
       - pytest
-      - codecov/upload:
-          token: d53c3d8a-0050-4a37-8c2e-d4aafa30b00a
