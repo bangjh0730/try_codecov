@@ -19,18 +19,11 @@ jobs:
     - run: python -m pip install --progress-bar=off pytest
     - run: python -m pytest test_codes/test.py
 
-jobs:
-  cypress:
-    yarn: true
-
-jobs:
-  - codecov:
-      token: d53c3d8a-0050-4a37-8c2e-d4aafa30b00a
-
 workflows:
   build:
     jobs:
-      - cypress
+      - cypress/run:
+          yarn: true
       - pytest
-      - codecov
-      
+      - codecov/upload:
+          token: d53c3d8a-0050-4a37-8c2e-d4aafa30b00a
